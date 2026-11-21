@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>字母练习</title>
+<style>
+@page { size: A4; margin: 0 }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f4f6; color: #1f2933;
+  font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; }
+.page { width: 210mm; min-height: 297mm; padding: 12mm; box-sizing: border-box;
+  overflow: hidden; background: #ffffff; margin: 0 auto; }
+header { border-bottom: 1px solid #d5dbe1; padding-bottom: 3mm; margin-bottom: 4mm; }
+h1 { margin: 0 0 2mm; font-size: 20px; font-weight: 600; letter-spacing: 1px; }
+.subtitle { margin: 0; font-size: 11px; color: #616e7c; }
+.rows { display: block; }
+.row { position: relative; height: 16mm; margin-top: 2mm; }
+.line { position: absolute; left: 0; right: 0; height: 0; border-top: 1px solid #a9b4bf; }
+.line[data-role="ascender"] { top: 0; }
+.line[data-role="midline"] { top: 4mm; border-top-style: dashed; border-top-color: #c3ccd5; }
+.line[data-role="baseline"] { top: 12mm; border-top-color: #5b6b7a; }
+.line[data-role="descender"] { top: 16mm; }
+.chars { position: absolute; left: 2mm; bottom: 4mm; white-space: nowrap;
+  font-family: "Courier New", Courier, monospace; font-size: 11mm; line-height: 1;
+  letter-spacing: 0.5mm; color: #cfd6dc; }
+footer { margin-top: 6mm; padding-top: 2mm; border-top: 1px solid #d5dbe1;
+  font-size: 10px; color: #7b8794; }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<h1>字母练习</h1>
+<p class="subtitle">四线三格 · 描摹行与空白练习行</p>
+</header>
+<div class="rows">
+<div class="row trace" data-row="1" data-kind="trace"><span class="line" data-role="ascender"></span><span class="line" data-role="midline"></span><span class="line" data-role="baseline"></span><span class="line" data-role="descender"></span><span class="chars">Aa Bb Cc Dd Ee</span></div><div class="row trace" data-row="2" data-kind="trace"><span class="line" data-role="ascender"></span><span class="line" data-role="midline"></span><span class="line" data-role="baseline"></span><span class="line" data-role="descender"></span><span class="chars">Ff Gg Hh Ii Jj</span></div><div class="row trace" data-row="3" data-kind="trace"><span class="line" data-role="ascender"></span><span class="line" data-role="midline"></span><span class="line" data-role="baseline"></span><span class="line" data-role="descender"></span><span class="chars">Kk Ll Mm Nn Oo</span></div><div class="row trace" data-row="4" data-kind="trace"><span class="line" data-role="ascender"></span><span class="line" data-role="midline"></span><span class="line" data-role="baseline"></span><span class="line" data-role="descender"></span><span class="chars">Pp Qq Rr Ss Tt</span></div><div class="row trace" data-row="5" data-kind="trace"><span class="line" data-role="ascender"></span><span class="line" data-role="midline"></span><span class="line" data-role="baseline"></span><span class="line" data-role="descender"></span><span class="chars">Uu Vv Ww Xx Yy</span></div><div class="row trace" data-row="6" data-kind="trace"><span class="line" data-role="ascender"></span><span class="line" data-role="midline"></span><span class="line" data-role="baseline"></span><span class="line" data-role="descender"></span><span class="chars">Zz</span></div>
+</div>
+<footer>四线三格：上伸线 / 中线（虚线）/ 基线 / 下伸线，单行总高 16mm（4-8-4mm）。</footer>
+</div>
+</body>
+</html>
